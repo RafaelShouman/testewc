@@ -1,44 +1,60 @@
 body {
-	font-family: 'Tajawal', sans-serif;
+	font-family: 'Open Sans', sans-serif;
+	font-weight: 300;
 }
-
-.produtos {
-	margin: 0 auto;
-	width: 1024px;
-	position: relative;
+h2 {
+	margin-bottom: 50px;
+	padding: 5px;
+	text-align: center;
+	text-transform: uppercase;
+	border-radius: 5px;
+	background-color: rgba(15,185,245, 1);
+	font-weight: 400;
+	color: whitesmoke;
 }
 table {
 	width: 100%;
 }
-
+th {
+	text-align: left;
+	color:rgba(15,185,245, 1); 
+}
+tr {
+	border-bottom: 1px solid rgba(180,180,180, 1);
+}
 td {
 	padding: 10px;
 	color: rgba(80,80,80, 1);
-}
-tr:active {
-	color: red;
-}
-tr:nth-child(odd) {
-	background-color: rgba(55,99,162, .2); 
-}
-
-tr:nth-child(even) {
-	background-color: rgba(55,99,162, .1); 
+	border-bottom: 1px dotted rgba(180,180,180, 1);
 }
 #form-frete {
 	display: none;
 	position: absolute;
 	z-index: 99;
-	padding: 15px;
-	background-color: rgba(200,200,200, 1);
-	width: 512px;
+	width: 650px;
 	height: 50px;
-	bottom: -50;
+	bottom: -80px;
 	left: 0;
 	border-radius: 0 0 10px 10px;
+	padding: 15px;
+	background-color: rgba(15,185,245, 1);
+	color: whitesmoke;
 }
 #form-frete.active {
 	display: block;
+}
+#form-frete input {
+	padding: 5px 10px;
+	margin: 5px;
+	border: none;
+	border-radius: 5px;
+}
+.wrap {
+	position: relative;
+}
+.produtos {
+	margin: 0 auto;
+	width: 1024px;
 }
 .clickable {
 	cursor: pointer;

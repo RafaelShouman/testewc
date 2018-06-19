@@ -5,25 +5,28 @@
 	<title>Teste 1</title>
 	<script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.4/jquery.min.js"></script>
 	<script src="main.js"></script>
-	<script type="text/javascript">
-
-	</script>
-	<link href="https://fonts.googleapis.com/css?family=Tajawal" rel="stylesheet"> 
+	<link href="https://fonts.googleapis.com/css?family=Open+Sans:300,400" rel="stylesheet">
 	<link rel="stylesheet" type="text/css" href="style.css">
 </head>
 <body>
 	<section class="produtos">
 		<h2>Lista de Produtos</h2>
-		<table>
-			<tbody id="resultado">
-				
-			</tbody>
-		</table>
-		 <form id="form-frete">
-		 <label>Digite seu CEP:</label><input type="number" min="8" max="8" name="cep">
-		 <label>Quantidade:</label><input type="number" min="1" max="2" name="quantidade">
-		 <input type="submit" value="Submit">
-		</form> 
+		<div class="wrap">
+			<table>
+				<tr>
+						<th>Produto</th>
+						<th>ID</th>
+					</tr>
+				<tbody id="resultado">
+
+				</tbody>
+			</table>
+			<form id="form-frete">
+				<label>Digite seu CEP:</label><input class="somente-numero" type="text" maxlength="8" name="cep">
+				<label>Quantidade:</label><input  class="somente-numero" type="text"  maxlength="2" name="quantidade">
+				<input type="button" value="Enviar" onclick="validaCamposSomenteNumero()"/>
+			</form>
+		</div>
 	</section>
 </body>
 </html>
