@@ -1,0 +1,45 @@
+body {
+	font-family: 'Tajawal', sans-serif;
+}
+
+.produtos {
+	margin: 0 auto;
+	width: 1024px;
+	position: relative;
+}
+table {
+	width: 100%;
+}
+
+td {
+	padding: 10px;
+	color: rgba(80,80,80, 1);
+}
+tr:active {
+	color: red;
+}
+tr:nth-child(odd) {
+	background-color: rgba(55,99,162, .2); 
+}
+
+tr:nth-child(even) {
+	background-color: rgba(55,99,162, .1); 
+}
+#form-frete {
+	display: none;
+	position: absolute;
+	z-index: 99;
+	padding: 15px;
+	background-color: rgba(200,200,200, 1);
+	width: 512px;
+	height: 50px;
+	bottom: -50;
+	left: 0;
+	border-radius: 0 0 10px 10px;
+}
+#form-frete.active {
+	display: block;
+}
+.clickable {
+	cursor: pointer;
+}
